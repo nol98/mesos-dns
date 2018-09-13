@@ -56,7 +56,7 @@ $ go build ./...
 
 #### Code signing
 
-This repo using code signing. There is an armored, encrypted GPG key in the repo in [build/private.key](build/private.key). This file includes the Mesos-DNS GPG signing key. The passphrase for the key is stored in Circle-CI's environment. This makes it fairly difficult to leak both components without detectable maliciousness.
+This repo uses code signing. There is an armored, encrypted GPG key in the repo in [build/private.key](build/private.key). This file includes the Mesos-DNS GPG signing key. The passphrase for the key is stored in Circle-CI's environment. This makes it fairly difficult to leak both components without detectable maliciousness.
 
 There are only very few users with access to the private key, and they also have access to a revocation certificate in case the private key leaks.
 

@@ -131,7 +131,7 @@ The line marked `SERVER` makes it clear that the process we launched to listen o
 
 Now let's launch a task using Mesos. We will strat the nginx webserver using Marathon and Docker. We will use the master node for this:
 
-First, create a configuration file for nginx named `nginx.json` with the following context:
+First, create a configuration file for nginx named `nginx.json` with the following content:
 
 ```json
 {
